@@ -1,3 +1,7 @@
+if (!window.solana) {
+  alert("Solana wallet not found. Please open in Phantom or a Solana-compatible wallet browser.");
+}
+
 const { Connection, PublicKey, clusterApiUrl } = solanaWeb3;
 const anchor = window.anchor;
 
